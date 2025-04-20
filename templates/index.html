@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Kalkulator Engagement Rate</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Engagement Rate</h1>
+        <form action="/calculate" method="post">
+            <label for="likes">Jumlah Likes:</label>
+            <input type="number" name="likes" required>
+            <label for="comments">Jumlah Comments:</label>
+            <input type="number" name="comments" required>
+            <label for="shares">Jumlah Shares:</label>
+            <input type="number" name="shares" required>
+            <label for="followers">Jumlah Followers:</label>
+            <input type="number" name="followers" required>
+            <button type="submit">Hitung</button>
+        </form>
+    </div>
+</body>
+</html>
